@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<style>
+	@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+	h1{
+	font-family: 'SBAggroB';
+	color: #99ccff;
+	text-shadow: -2px -2px 8px #ccffcc, 3px 3px 5px #66ccff;
+	}
+	.wrapper{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	form{
+	text-align: left;
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 40px;
+	background-color: #ccff99;
+	}
+	</style>
+<body>
+<div class="wrapper">
+<h1>팬션 예약 서비스</h1>
+<hr>
+<form method="post" action="/sedu/jspexam/reservation.jsp">
+	예약자명 : <input type="text" name = "name" required><br><br>
+	예약암호 : <input type="password" required><br><br>
+	룸선택 : <input type="radio" name = "room" value = "둘리">둘리 
+				<input type="radio" name = "room" value = "희동">희동 
+				<input type="radio" name = "room" value = "도우너">도우너 
+				<input type="radio" name = "room" value = "또치">또치<br><br>
+	추가요청사항 : 	<input type="checkbox" name="food" value="바베큐">바베큐
+						<input type="checkbox" name="food" value="수영장">수영장
+						<input type="checkbox" name="food" value="낚시">낚시
+						<input type="checkbox" name="food" value="조식">조식<br><br>
+	예약날짜 : 		<input name="reservDate" type="date" min="1990-01-01" max="2025-06-27"><br><hr>
+	<input type="submit" value="보내기">
+	<input type="reset" value="다시작성하기">
+</form>
+</div>
+</body>
+</html>

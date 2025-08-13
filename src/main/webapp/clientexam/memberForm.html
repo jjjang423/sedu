@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	.wrapper{
+	width: 700px;
+	height: 300px;
+	}
+	h1{
+   	text-shadow : -2px -2px 5px yellow, 4px 4px 5px green;
+	}
+	input{
+	border: 2px solid;
+	border-radius: 10px;
+	}
+	form{
+	width: 400px;
+	height: 500px;
+	}
+	.key input{
+	width: 200px;
+	height: 20px;
+	}
+</style>
+<body>
+<div class="wrapper">
+<div class="content">
+	<h1>회원 정보를 입력하십시오.</h1>
+	<hr>
+	<form method = "post" action = "/sedu/member">
+	<div class="key">
+	<input type="text" name="name" placeholder="이름을 입력하세요"></input><br>
+	<input type="text" name="number" placeholder="전화번호를 입력하세요"></input><br>
+	<input type="text" name="ID" placeholder="계정을 입력하세요"></input><br>
+	<input type="text" name="password" placeholder="패스워드를 입력하세요"></input><br>
+	</div>
+	<br>
+	<input type="submit" value="등록">
+	<input type="reset" value="재작성">
+	</form>
+	</div>
+	</div>
+</body>
+</html>
